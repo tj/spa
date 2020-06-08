@@ -11,7 +11,7 @@ import (
 // Server is an http.Handler which serves static files from Dir,
 // and reverts to serving index.html for any missing files.
 //
-// Requests which contain an extension — such as /favicon.ico — are greated as
+// Requests which contain an extension such as "/favicon.ico" are treated as
 // requests for a file, yielding 404 instead of serving /index.html.
 type Server struct {
 	Dir string
