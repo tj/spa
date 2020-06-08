@@ -11,7 +11,7 @@ import (
 // Test server.
 func TestServer(t *testing.T) {
 	h := spa.Server{
-		Dir: "example",
+		Dir: "testdata",
 	}
 
 	t.Run("with index", func(t *testing.T) {
